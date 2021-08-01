@@ -7,7 +7,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(devConfiguration,
     {
-        entry: './src/client/index.js',
         mode: 'production',
         plugins: [
             new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' })
