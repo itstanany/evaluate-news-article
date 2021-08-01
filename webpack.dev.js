@@ -1,4 +1,4 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin')
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
@@ -19,9 +19,9 @@ module.exports = {
                 loader: 'babel-loader',
             },
             {
-                test: /\.sass$/,
+                test: /\.scss$/,
                 exclude: /node_modules/,
-                use: ['style-loader', 'mini-css-extract-plugin', 'sass-loader']
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
     },
