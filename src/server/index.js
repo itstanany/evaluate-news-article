@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 
 const mockAPIResponse = require('./mockAPI.js');
 const bodyParser = require('body-parser');
@@ -19,7 +20,8 @@ app.use(express.static('dist'))
 
 app.get('/', function (req, res) {
     // res.sendFile('dist/index.html')
-    res.sendFile(path.resolve('src/client/views/index.html'))
+    // res.sendFile(path.resolve('src/client/views/index.html'))
+    res.sendFile(path.resolve('dist/index.html'))
 })
 // a route that handling post request for new URL that coming from the frontend
 app.post('/analyse', analyse)
