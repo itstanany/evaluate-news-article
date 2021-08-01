@@ -1,3 +1,8 @@
+/**
+ * Manipulate DOM to show result analysis
+ * @param {Object, API response} param0 api response contain analysis results
+ */
+
 const showResult = ({ data }) => {
   document.getElementById("agreement").innerHTML = `Agreement: ${data.agreement}`;
   document.getElementById("subjectivity").innerHTML = `Subjectivity: ${data.subjectivity}`;
