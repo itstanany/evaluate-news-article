@@ -1,4 +1,4 @@
-# Udacity Project:
+# Udacity Advanced front-end Nanodegree Project:
 
 # Evaluate a news article with Natural Language Processing
 
